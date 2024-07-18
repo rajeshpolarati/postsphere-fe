@@ -1,4 +1,4 @@
-# Postsphere Frontend
+# Postsphere
 
 Welcome to the Postsphere frontend repository! This project is designed to enhance social interactions through a platform where users can create posts, connect with others, and engage in real-time interactions.
 
