@@ -1,0 +1,73 @@
+.user_profile_section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #E2E8F0;
+}
+.user_profile_section .user_stats{
+    display: flex;
+    padding: 10px 0;
+}
+.user_profile_section .user_name{
+    font-size: 40px;
+    font-weight: 500;
+}
+.user_profile_section .user_name .follow-text {
+  font-size: 14px;
+  /* border: 1px solid black; */
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  background-color: var(--star-color-primary);
+  transition: all 500ms ease-in-out;
+}
+.user_profile_section .user_name .follow-text:active{
+transform: scale(0.7);
+}
+.user_profile_section .user_bio{
+    font-size: 14px;
+    font-weight: 500;
+}
+.user_profile_section .user_stats .stat_item{
+    margin-right: 20px;
+    font-size: 14px;
+}
+.user_profile_section .location_info {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_profile_section .user_profile_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user_profile_section .profile_avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.edit_profile_modal .name_input{
+ display: flex;
+}
+.edit_profile_modal .name_input .input_group{
+    padding: 0 4px;
+}
+
+.edit_profile_modal_container{
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 1) 3px 3px !important;
+}
+@media only screen and (max-width: 600px){
+    .user_profile_section .profile_avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}

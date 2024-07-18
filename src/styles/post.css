@@ -1,0 +1,217 @@
+.post_card{
+    display: grid;
+    padding: 30px 10px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    grid-template-columns: 1.5fr 6.5fr 1fr;
+    cursor: pointer;
+}
+.edit_post_modal textarea{
+    height: 150px;
+    background-color: #EDF2F7 !important;
+}
+.post_card .person_profile_img{
+    text-align: center;
+    min-width: 20%;
+}
+
+.post_card .post_person_details{
+    padding: 0 10px;
+}
+.post_card .person_name{
+    font-weight: bold;
+    font-size: 15px;
+    /* color: red; */
+}
+.post_card .person_name:hover{
+    text-decoration: underline;
+    text-decoration-color: var( --star-color-primary);
+    color: var( --star-color-primary);
+}
+.post_card .posted_time{
+    font-size: 14px;
+    color: grey;
+}
+.post_card .post_content {
+    padding: 10px;
+    font-size: 14px;
+    min-width: 200px;
+}
+.post_card .post_actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px;
+    font-size: 20px;
+    width: 130px;
+}
+
+.post_card .post_actions .icon {
+    /* margin-right: 25px; */
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+}
+.post_card .post_actions .comment-icon,
+.post_card .post_actions .like-icon,
+.post_card .post_actions .bookmark-icon {
+ display: flex;
+ align-items:end;
+
+}
+.post_card .post_actions .comment-icon{
+    position: relative;
+}
+.post_card .post_actions .like-icon .icon {
+    width: 20px;
+    height: 20px;
+}
+.post_card .post_actions .like-icon{
+ 
+    padding-bottom:2px ;
+}
+.post_card .post_actions .like-icon .like_count{
+    font-size: 16px;
+    line-height:16px;
+}
+.post_card .post_actions .comment-icon .comment_count{
+    position: absolute;
+    font-size: 7px;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--star-color-primary);
+    color: white;
+    right:-3px;
+    top:-3px;
+}
+.post_card .post_actions .like-icon .like_count{
+    line-height: -2px;
+}
+.post_card .post_settings{
+    margin-right: 5px;
+
+}
+.post_card .post_settings .profile_options{
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 1) 3px 3px;
+    padding: 5px;
+}
+.post_card .post_info{
+    justify-self: start;
+}
+.add_comment_section{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    padding: 14px 30px;
+    border-bottom: 1px solid #E2E8F0;
+}
+.add_comment_section .profile_img {
+     width: 50px;
+     margin-right: 20px;
+}
+
+.comment_input{
+    font-size: 14px !important;
+}
+.comment_input::placeholder {
+    font-size: 12px;
+}
+.add_comment_section .post-btn:hover{
+    color: black !important;
+}
+
+.post_comment_section{
+    display: grid;
+    padding: 30px 10px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    grid-template-columns: 1.5fr 6.5fr 1fr;
+    
+}
+
+.post_comment_section .person_profile_img {
+    text-align: center;
+    min-width: 80px;
+}
+.post_comment_section .comment_person_details{
+    padding: 0 10px;
+}
+.post_comment_section .comment_info .options{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+}
+.post_comment_section .comment_info .options p{
+    cursor: pointer;
+}
+.post_comment_section .comment_info .options p:hover{
+    color: var(--star-color-primary);
+}
+.post_comment_section .comment_info .options p:first-child{
+    margin-right: 20px;
+}
+.post_comment_section .person_name{
+    font-weight: bold;
+    font-size: 15px;
+    /* color: red; */
+}
+.post_comment_section .person_name:hover{
+    text-decoration: underline;
+    text-decoration-color: var( --star-color-primary);
+    color: var( --star-color-primary);
+}
+.post_comment_section .commented_time{
+    font-size: 14px;
+    color: grey;
+}
+.post_comment_section .comment_content{
+    padding: 10px;
+    font-size: 14px;
+}
+.post_comment_section .comment_actions{
+    display: flex;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+.post_comment_section .comment_actions .icon {
+    cursor: pointer;
+    color: white;
+    background-color: white;
+    background-image: none;
+}
+.post_comment_section .comment_interaction{
+    padding: 5px 0;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.post_comment_section .comment_interaction .icon:active{
+    transform: scale(0.9);
+}
+.post_comment_section .comment_interaction .icon_liked {
+    color: red;
+}
+.create_post_section{
+    padding: 20px;
+    border-bottom: 1px solid #E2E8F0;
+}
+.create_post_section .create_post_input{
+    border: 0;
+    outline: none;
+}
+.create_post_section .create_post_section_inner{
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+}
+.create_post_section .create_post_btn{
+ background-color: #E2E8F0;
+ padding: 10px;
+ text-align: end;
+}
+.create_post_section .post_input{
+    padding: 20px 2px;
+}
