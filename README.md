@@ -26,3 +26,7 @@ Make sure you have Node.js and npm installed.
 1. Clone the repo
    ```sh
    git clone https://github.com/rajeshpolarati/postsphere-fe.git
+
+1. Clone the Backend repo
+   ```sh
+   git clone https://github.com/rajeshpolarati/postsphere-be.git
